@@ -1,5 +1,5 @@
 :root {
-  --font-family: "Ubuntu", sans-serif;
+  --font-family: "Lato", sans-serif;
   --content-width: 1230px;
   --content-width-fluid: 1860px;
   --container-offset: 15px;
@@ -11,6 +11,15 @@
   --danger: #FF4242;
   --warning: #F89828;
   --info: #5A87FC;
+  --gray900: #1E212C;
+  --gray800: #424551;
+  --gray700: #787A80;
+  --gray600: #9A9CA5;
+  --gray500: #B3B7BC;
+  --gray400: #D7DADD;
+  --gray300: #E5E8ED;
+  --gray200: #F4F5F7;
+  --gray100: #F9F9F9;
 }
 
 /* stylelint-disable */ /* stylelint-disable */ /* stylelint-disable */
@@ -31,28 +40,28 @@
 /* stylelint-disable */ /* stylelint-disable */ /* stylelint-disable value-keyword-case */
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/Lato-Regular.woff2") format("woff2");
+  src: url("../fonts/../fonts/Lato-Regular.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/Lato-Bold.woff2") format("woff2");
+  src: url("../fonts/../fonts/Lato-Bold.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/Lato-Black.woff2") format("woff2");
+  src: url("../fonts/../fonts/Lato-Black.woff2") format("woff2");
   font-weight: 900;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Ubuntu";
-  src: url("../fonts/Ubuntu-Bold.woff2") format("woff2");
+  src: url("../fonts/../fonts/Ubuntu-Bold.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -170,5 +179,48 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.btn {
+  font-family: "Lato";
+  font-style: normal;
+  color: var(--white);
+  background-color: var(--primary);
+  border-radius: 4px;
+  border: 1px solid var(--primary);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: transparent;
+  color: var(--primary);
+}
+
+.btn-outline {
+  font-family: "Lato";
+  font-style: normal;
+  color: var(--primary);
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid var(--primary);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.btn-outline:hover {
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+.title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: var(--gray900);
 }
 /*# sourceMappingURL=main.css.map */

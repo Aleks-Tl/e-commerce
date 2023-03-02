@@ -110,3 +110,43 @@ a {
 .page--ios .dis-scroll {
   position: relative;
 }
+
+.btn {
+  font-family: 'Lato';
+  font-style: normal;
+  color: var(--white);
+  background-color: var(--primary);
+  border-radius: 4px;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  &:hover {
+    background-color: transparent;
+    color: var(--primary);
+  }
+}
+
+.btn-outline {
+  font-family: 'Lato';
+  font-style: normal;
+  color: var(--primary);
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  &:hover {
+    color: var(--white);
+    background-color: var(--primary);
+  }
+}
+
+
+.title {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: var(--gray900);
+}
