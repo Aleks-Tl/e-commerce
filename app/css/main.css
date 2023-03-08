@@ -223,4 +223,118 @@ a {
   line-height: 130%;
   color: var(--gray900);
 }
+
+.header .header-top {
+  background-color: var(--gray900);
+  padding: 11px 0;
+}
+.header .header-top__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .header-top__phone {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.header .header-top__number {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 900;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.header .header-top__number:hover {
+  color: var(--success);
+}
+.header .header-top__menu {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 194px;
+}
+.header .header-top__item:not(:last-child) {
+  margin-right: 32px;
+}
+.header .header-top__link {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.header .header-top__link:hover {
+  color: var(--success);
+  text-decoration: underline;
+}
+.header .header-top__languages {
+  margin-right: auto;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 32px;
+  background-image: url("../img/flag-usa.svg");
+  background-position: left 3px;
+  background-repeat: no-repeat;
+  background-size: 20px 12px;
+  position: relative;
+  cursor: pointer;
+}
+.header .header-top__languages:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: -15px;
+  background-image: url("../img/down-chevron.svg");
+  width: 12px;
+  height: 12px;
+}
+.header .header-top__profile {
+  margin-left: 60px;
+  padding-left: 24px;
+  background-image: url("../img/profile.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: left center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.header .header-top__profile a {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.header .header-top__profile a:hover {
+  color: var(--success);
+}
 /*# sourceMappingURL=main.css.map */

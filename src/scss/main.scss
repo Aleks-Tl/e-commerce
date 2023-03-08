@@ -2,3 +2,146 @@
 @import "mixins";
 @import "fonts";
 @import "settings";
+
+
+// HEADER START ========================================================================================================================================================
+
+.header {
+  .header-top {
+    background-color: var(--gray900);
+    padding: 11px 0;
+
+    // .header-top__wrap
+
+		&__wrap {
+      display: flex;
+    }
+
+    // .header-top__phone
+
+		&__phone {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: rgb(#ffffff, 0.6);
+    }
+
+		// .header-top__number
+
+		&__number {
+      color: rgb(#ffffff, 0.6);
+      font-weight: 900;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        color: var(--success);
+      }
+    }
+
+		// .header-top__menu
+
+		&__menu {
+      flex-grow: 1;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      margin-left: 194px;
+    }
+
+		// .header-top__item
+
+		&__item {
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+    }
+
+		// .header-top__link
+
+		&__link {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color:rgba(#ffffff, 0.6);
+      transition: all 0.3s ease 0s;
+      &:hover {
+        color: var(--success);
+        text-decoration: underline;
+      }
+    }
+
+		// .header-top__languages
+
+		&__languages {
+      margin-right: auto;
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: rgba(#ffffff, 0.6);
+      padding-left: 32px;
+      background-image: url('../img/flag-usa.svg');
+      background-position: left 3px;
+      background-repeat: no-repeat;
+      background-size: 20px 12px;
+      position: relative;
+      cursor: pointer;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -15px;
+        background-image: url('../img/down-chevron.svg');
+        width: 12px;
+        height: 12px;
+
+      }
+    }
+
+		// .header-top__profile
+
+		&__profile {
+      margin-left: 60px;
+      padding-left: 24px;
+      background-image: url('../img/profile.svg');
+      background-repeat: no-repeat;
+      background-size: 16px 16px;
+      background-position: left center;
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: rgba(#ffffff, 0.6);
+      a {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: rgba(#ffffff, 0.6);
+        transition: all 0.3s ease 0s;
+        &:hover {
+          color: var(--success);
+        }
+      }
+    }
+
+		// .header-top__login
+
+		&__login {}
+
+		// .header-top__register
+
+		&__register {}
+}
+}
+
+
+
